@@ -1,6 +1,6 @@
 
   <ul class='operations' >
-    <li class='{{method}} operation' id='{{parentId}}_{{nickname}}'>
+      <li class='{{method}} operation {{#if experimental}}experimental{{/if}}' id='{{parentId}}_{{nickname}}'>
       <div class='heading'>
         <h3>
           <span class='http_method'>
@@ -12,7 +12,7 @@
         </h3>
         <ul class='options'>
           <li>
-          <a href='#!/{{parentId}}/{{nickname}}' class="toggleOperation">{{{summary}}}</a>
+          <a href='#!/{{parentId}}/{{nickname}}' class="toggleOperation">{{#if experimental}}<span>EXPERIMENTAL - </span>{{/if}}{{{summary}}}</a>
           </li>
         </ul>
       </div>

@@ -536,6 +536,7 @@ var Operation = function(parent, operationId, httpMethod, path, args, definition
   var errors = [];
   this.operation = args;
   this.deprecated = args.deprecated;
+  this.experimental = args.experimental;
   this.consumes = args.consumes;
   this.produces = args.produces;
   this.parent = parent;
